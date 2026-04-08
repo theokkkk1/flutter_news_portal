@@ -1,17 +1,92 @@
-# Flutter News Portal - Final
+# 📰 Sponews – Portal de Notícias Esportivas
 
-Features added:
-- Theme toggle (AppBar button) with persistence
-- Registration (name, email, password) stored locally
-- Categories derived from news_site (ChoiceChips)
-- Article details view with share and favorite
-- Profile view with basic user info and theme switch
-- Infinite scroll + Favorites persisted with SharedPreferences
+Aplicativo mobile desenvolvido com Flutter para consumo e exibição de notícias esportivas em tempo real, com foco em performance, organização de código e boa experiência do usuário.
 
-How to run:
-1. flutter pub get
-2. flutter run -d chrome (or device)
+---
 
-Notes:
-- For full browser opening of links, add webview or url_launcher as needed.
-- The Share feature uses share_plus plugin.
+## 🚀 Funcionalidades
+
+* 📡 Consumo de API de notícias esportivas
+* 📰 Listagem dinâmica de notícias
+* 🔍 Tela de detalhes com conteúdo completo
+* ⭐ Sistema de favoritos
+* ⚙️ Tela de configurações
+* 🔄 Tratamento de estados (loading, erro e sucesso)
+* 🧭 Navegação com rotas nomeadas
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+* Flutter
+* Dart
+* HTTP (consumo de API)
+* Gerenciamento de estado (setState / FutureBuilder)
+
+---
+
+## 🧠 Conceitos Aplicados
+
+* Consumo de APIs REST
+* Separação de responsabilidades
+* Componentização de widgets
+* Tratamento de erros e estados da aplicação
+* Navegação entre telas
+
+---
+
+## 📱 Estrutura do Projeto
+
+```
+lib/
+ ├── models/        # Modelos de dados (notícias)
+ ├── services/      # Consumo de API
+ ├── screens/       # Telas do app
+ ├── widgets/       # Componentes reutilizáveis
+ └── main.dart      # Ponto de entrada
+```
+
+---
+
+## 📊 Objetivo do Projeto
+
+Este projeto foi desenvolvido com o objetivo de praticar o desenvolvimento mobile utilizando Flutter, com foco em aplicações que consomem dados externos e apresentam informações de forma organizada e interativa para o usuário.
+
+---
+
+## ▶️ Como Executar
+
+1. Clone o repositório:
+
+```
+git clone https://github.com/seu-usuario/sponews.git
+```
+
+2. Acesse a pasta do projeto:
+
+```
+cd sponews
+```
+
+3. Instale as dependências:
+
+```
+flutter pub get
+```
+
+4. Execute o app:
+
+```
+flutter run
+```
+
+---
+
+## 📌 Melhorias Futuras
+
+* 💾 Persistência de favoritos (SQLite ou SharedPreferences)
+* 🔎 Sistema de busca de notícias
+* 🌙 Tema dark mode
+* 📡 Cache de dados para uso offline
+
+---
